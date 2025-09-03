@@ -6,10 +6,10 @@
     <title>Document</title>
      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">    
+  
 </head>
 <body>
     
-    <p>alma y seba</p>
 
      <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -25,5 +25,37 @@
   </div>
 </nav>
 
+<div id="carouselExample" class="carousel slide" style="max-width: 600px; margin: 40px auto;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/fondo futurista.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/malos con bateria.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/man melancolico.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<script src="bootstrap/js/bootstrap.bundle.js"></script>
+<script>
+  const myCarouselElement = document.querySelector('#myCarousel')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
+})
+
+
+</script>
 </body>
 </html>
